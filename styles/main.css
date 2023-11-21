@@ -1,0 +1,371 @@
+html,
+body {
+  background-color: rgb(16, 16, 16);
+  font-family: 'Pixelify Sans', sans-serif;
+}
+
+body {
+  background-color: rgb(16, 16, 16);
+  font-family: 'Pixelify Sans', sans-serif;
+}
+
+header {
+  grid-area: header;
+  height: 200px;
+  background: url('../images/pic.gif');
+  color: white;
+  font-size: 3.50em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-shadow: 2px 2px 4px rgba(199, 101, 210, 0.5);
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+#search {
+  border: 1px solid rgba(199, 101, 210, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+  color: rgb(20, 18, 18);
+  text-align: center;
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 0.25em;
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+nav {
+  grid-area: menu;
+  height: 40px;
+  font-size: 1.75em;
+  padding: 0;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(228, 214, 230, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.571);
+}
+
+nav a {
+  color: rgb(181, 46, 222);
+  text-decoration-line: underline;
+  margin: 0 10px;
+  line-height: 1;
+
+}
+
+nav a:hover {
+  background: linear-gradient(90deg, rgba(133, 115, 247, 0.461), rgba(198, 115, 247, 1));
+  margin-left: 5px;
+  padding: 0 10px;
+  border-bottom: 2px solid transparent;
+  color: white;
+}
+
+#container {
+  grid-area: container;
+  padding: 20px;
+  color: white;
+}
+
+footer {
+  grid-area: footer;
+  padding: 10px;
+  text-align: center;
+  color: #ccc;
+}
+
+.hidden {
+  display: none;
+}
+
+a.active {
+  color: white;
+  font-weight: bold;
+}
+
+span.favorite {
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+span.favorite.active {
+  color: rgb(255, 0, 149);
+}
+
+span.favorite:hover {
+  color: rgb(187, 135, 255)
+}
+
+/* End template styling */
+
+
+.view {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 0px;
+}
+
+.content-simple {
+  position: relative;
+  background: rgb(16, 16, 16);
+  border: 0px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+img {
+  width: 250px;
+  height: 250px;
+}
+
+.view-details {
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.view-details:hover {
+  background: rgba(201, 84, 224, 0.5);
+}
+
+#home {
+  padding: 50px;
+}
+
+#welcoming {
+  text-align: center;
+}
+
+#home h1 {
+  text-align: center;
+}
+
+#home div.content {
+  max-width: 500px;
+  margin: 50px auto;
+  font-size: 1.5em;
+}
+
+.gifs-detailed {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.poster {
+  flex: 1;
+  padding: 10px;
+}
+
+.poster img {
+  max-width: 100%;
+  height: 100%;
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.info {
+  flex: 2;
+  padding: 10px;
+}
+
+#gifs p {
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: rgb(181, 46, 222);
+}
+
+#gifs h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: rgb(181, 46, 222);
+}
+
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upload-form form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 500px;
+  margin-top: 20px;
+}
+
+.form-row {
+  flex: 1;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  margin-top: 10px;
+  align-self: flex-end;
+  padding: 5px 10px;
+  background-color: #0078d4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.upload-form h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* About styles */
+
+#about {
+  padding: 50px;
+}
+
+#about h1 {
+  color: rgb(187, 135, 255);
+  margin-bottom: 50px;
+}
+
+#about h2 {
+  color: rgb(229, 210, 255);
+}
+
+/* End about styles */
+#form {
+  display: grid;
+}
+
+#fileInput {
+  width: 300px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#upl-button {
+  background-color: #0074d9;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 200px;
+  height: 25px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+#upl-button:hover {
+  background-color: #0056b3;
+}
+
+#movies h1 {
+  margin-top: 20px;
+}
+
+#form {
+  text-align: center;
+  margin: 20px;
+  width: 20%;
+}
+
+#fileInput {
+  margin: 10px 0;
+}
+
+#api-key {
+  padding: 10px;
+  height: 5%;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#upl-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+
+#error-message {
+  color: red;
+}
+
+#loginview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #441f41;
+  width: 250px;
+  /* Adjust the width as needed */
+  margin: 10px;
+  /* Add some spacing between forms */
+}
+
+.form label,
+.form input {
+  margin: 5px 0;
+}
+
+.form button {
+  margin: 10px 0;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: #0056b3;
+}
